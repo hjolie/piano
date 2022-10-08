@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIANO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="piano-container">
+        <div id="piano-body">
+
+            <div class="speaker"></div>
+
+            <div id="interface">
+                <div id="keyboard-display-options">
+                    <h3>KEYBOARD</h3>
+
+                    <label>
+                        <input type="radio" class="keyboard-display-option" name="keyboard-display-option" value="letterNotes" checked>
+                        Letter Notes
+                    </label>
+                    <label>
+                        <input type="radio" class="keyboard-display-option" name="keyboard-display-option" value="none">
+                        None
+                    </label>
+                </div>
+
+                <div id="autoplay">
+                    <h3>AUTOPLAY</h3>
+
+                    <select id="song-list">
+                        <option id="choose-a-song">Choose a song:</option>
+                        <option value="happyBirthday">Happy Birthday</option>
+                        <option value="furElise">Für Elise</option>
+                        <option value="theMaiden'sPrayer">The Maiden's Prayer</option>
+                    </select>
+
+                    <button id="play-btn">Play</button>
+                    <button id="stop-btn">Stop</button>
+                </div>
+            </div>
+
+            <div class="speaker"></div>
+
+        </div>
+
+        <div id="piano-keyboard"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

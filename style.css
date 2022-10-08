@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arima', cursive, sans-serif;
+}
+
+#piano-container {
+    width: 1080px;
+    height: 500px;
+    background-color: #1c0030;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+#piano-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.speaker {
+    width: 250px;
+    height: 150px;
+    border-radius: 15px;
+    background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color: #9747bf;
+    background-size:16px 16px;
+}
+
+#interface {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #cc70fa;
+    box-shadow: inset 0 0 10px #111;
+    color: #1c0030;
+    padding: 10px 30px;
+}
+
+#interface h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#keyboard-display-options {
+    margin-bottom: 30px;
+}
+
+select, option, #play-btn, #stop-btn {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1c0030;
+    font-family: 'Arima', cursive, sans-serif;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+select #choose-a-song {
+    font-size: 14px;
+    background-color: lightgray;
+}
+
+#piano-keyboard {
+    width: 100%;
+    height: 300px;
+    background-color: #1c0030;
+    display: flex;
+}
+
+.piano-key {
+    width: 30px;
+    height: 100%;
+    padding: 0;
+    margin: 0 1px;
+    background-color: #fff;
+    color: #1c0030;
+    border: 1px solid #000;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.piano-key-white {
+    padding-top: 100px;
+}
+
+.empty-space {
+    position: relative;
+}
+
+.piano-key-black {
+    height: 60%;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    left: -15px;
+    border: none;
+}
+
+.piano-key-white.piano-key-playing, .piano-key-black.piano-key-playing {
+    background-color: #cc70fa;
+    font-weight: 700;
+}
+
+.piano-key-black.piano-key-playing {
+    color: #1c0030;
+}
